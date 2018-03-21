@@ -6,12 +6,12 @@ email: lin_guang_hua@qq.com
 description: "Every failure is leading towards success."
 keyword: "Linxu, Linxu Blog, 林序的博客, linguanghua, 林广华, Android"
 url: "http://linguanghua.github.io/blog"          # your host, for absolute URL
-baseurl: "/blog"      # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/linguanghua/blog.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Do whatever you want when you want."
+sidebar-about-description: "Do whatever you want when you want to."
 sidebar-avatar: /blog/img/about-linxu.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
