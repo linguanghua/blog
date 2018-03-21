@@ -4,8 +4,8 @@ layout:     post   				    # 使用的布局（不需要改）
 title:      Android进程间通信之AIDL 				# 标题 
 subtitle:   这是一个例子工程，主要介绍AIDL的使用和原理浅析 #副标题
 date:       2018-01-19 				# 时间
-author:     BY 						# 作者
-header-img: img/post-bg-2015.jpg 	#这篇文章标题背景图片
+author:     linxu					# 作者
+ 
 catalog: true 						# 是否归档
 tags:								#标签
     - Android
