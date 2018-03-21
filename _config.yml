@@ -6,7 +6,7 @@ email: lin_guang_hua@qq.com
 description: "Every failure is leading towards success."
 keyword: "Linxu, Linxu Blog, 林序的博客, linguanghua, 林广华, Android"
 url: "http://linguanghua.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/blog"      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/linguanghua/blog.git" # you code repository
 
 # Sidebar settings
