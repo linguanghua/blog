@@ -83,6 +83,9 @@ friends: [
         title: "Kontlin",
         href: "http://www.kotlincn.net/docs/reference/"
     },{
+        title: "Flutter",
+        href: "https://flutter.io/"
+    },{
         title: "Android Developer",
         href: "http://android.xsoftlab.net/index.html"
     }
