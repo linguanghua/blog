@@ -1,0 +1,104 @@
+---
+
+layout:     post   				    # 使用的布局（不需要改）
+title:      Flutter之安装与体验 				# 标题 
+subtitle:     #副标题
+date:       2018-04-10 				# 时间
+author:     linxu					# 作者
+ 
+catalog: true 						# 是否归档
+tags:								#标签
+    - Android
+    - iOS
+    - Flutter
+---
+
+
+
+# Flutter之安装与体验
+
+Flutter出来有一段时间了，最近才开始学习，写点笔记来记录知识点。这篇博文讲讲安装和第一次运行Flutter应用。下面是Flutter官网对Flutter的介绍：
+    
+> Flutter is Google’s mobile UI framework for crafting high-quality native interfaces on iOS and Android in record time. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source.
+
+   翻译大概如下，英文不好，将就一下，哈哈哈<br />
+   Flutter是谷歌的移动UI框架，用于iOS和Android再记录时间内创建高质量本地接口。Flutter与已有的代码工作，被全世界的开发者和组织使用，Flutter是免费并开源的。
+
+## Flutter之安装
+
+Flutter的安装，可以根据官网上的专门针对中国开发者给出的方法:[Flutter中国安装方法](https://github.com/flutter/flutter/wiki/Using-Flutter-in-China)
+
+
+> 这是中国的一个镜像，官方不确定一直能用，具体设置如下：
+>   
+    export PUB_HOSTED_URL=https://pub.flutter-io.cn
+    export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+    git clone -b dev https://github.com/flutter/flutter.git
+    export PATH="$PWD/flutter/bin:$PATH"
+    cd ./flutter
+    flutter doctor
+
+上面的设置是用于Mac和Linux的,对于Windows开发者,首先笔记本需要确保安装了Git for Windows。
+第一步：需要创建两个环境变量（这里我放的是用户变量而非系统环境变量） **PUB_HOSTED_URL** 和 **FLUTTER_STORAGE_BASE_URL**；
+第二步：使用git下载Flutter的SDK
+第三步：把第二步Flutter SDk的路径加入系统环境变量path中
+第四步：进入Flutter SDK目录，找到 **flutter_console.bat** 文件，双击它，会打开一个特殊点的命令行，输入下面命令回车：
+> flutter doctor
+
+正常情况下，应该没有什么问题。昨天安装的时候，在公司一直没安装好，但回去用自己的电脑一装就ok。不知道为啥。遇到问题，可以到[Flutter项目的GitHub问题区](https://github.com/flutter/flutter/issues/16332)找答案<br />
+
+安装好之后，接着在Android studio里面安装Flutter和Dart插件，下面是摘取官网的，比较简单，不翻译了。
+
+>
+1. Start Android Studio.
+2. Open plugin preferences (Preferences>Plugins on macOS, File>Settings>Plugins on Windows & Linux).
+3. Select Browse repositories…, select the Flutter plug-in and click install.
+4. Click Yes when prompted to install the Dart plugin.
+5. Click Restart when prompted.
+
+到这就完成了Flutter的安装。
+
+## 下面创建Flutter程序
+
+ 打开Android Studio
+
+1. Select File>New Flutter Project
+2. Select Flutter application as the project type, and press Next
+3. Enter a project name (e.g. myapp), and press Next
+4. Click Finish
+
+Wait for Android Studio to install the SDK, and create the project.
+ 
+ 删除lib/main.dart文件的代码，用下面的代码来代替
+ 
+ >
+    import 'package:flutter/material.dart';
+
+    void main() => runApp(new MyApp());
+
+    class MyApp extends StatelessWidget {
+      @override
+      Widget build(BuildContext context) {
+        return new MaterialApp(
+          title: 'Welcome to Flutter',
+          home: new Scaffold(
+              appBar: new AppBar(
+              title: new Text('Welcome to Flutter'),
+            ),
+          body: new Center(
+              child: new Text('Hello World'),
+          ),
+        ),
+      );
+    }}
+ 
+ 
+ 然后连接设备，点击运行区的运行按钮
+ 
+![](./img/main-toolbar.png '运行区')
+
+
+**运行效果如下：**
+
+![](./img/hello-world-screenshot.png '运行效果')
+
