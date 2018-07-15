@@ -1,0 +1,19 @@
+---
+
+layout:     post   				    # 使用的布局（不需要改）
+title:      Android程序启动流程 				# 标题 
+subtitle:   文章主要介绍Android程序启动流程 #副标题
+date:       2018-07-15 				# 时间
+author:     linxu					# 作者
+ 
+catalog: true 						# 是否归档
+tags:								#标签
+    - Android
+    - Android程序启动流程
+---
+
+# Android程序启动流程
+文章主要介绍Android程序启动流程。
+
+Android开发语言最开始是使用的Java语言，我们都知道Java程序运行都是从main方法开始的。所以在阅读Android源代码的时候也是先找到的这个方法。
+Android的main方法是在ActivityThread类里面。
