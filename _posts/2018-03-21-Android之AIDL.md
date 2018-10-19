@@ -28,10 +28,10 @@ tags:								#标签
 &emsp;&emsp;Java中的八种基本数据类型，包括byte，short，int，long，float，double，boolean，char.<br />
 &emsp;&emsp;String类型<br />
 &emsp;&emsp;CharSequence类型<br />
-List类型：List中的所有元素必须是AIDL支持的类型之一，或者是一个其他AIDL生成的接口，或者是定义的parcelable。可以使用泛型<br />
+&emsp;&emsp;List类型：List中的所有元素必须是AIDL支持的类型之一，或者是一个其他AIDL生成的接口，或者是定义的parcelable。可以使用泛型<br />
 &emsp;&emsp;Map类型：Map中所有元素必须是AIDL支持的类型之一，或者是一个其他AIDL生成的接口，或者是定义的parcelable。Map是不支持泛型的。<br />
 &emsp;&emsp;所有的AIDL接口本身<br />
-   定向tag: AIDL中的定向tag用来表示在跨进程通信中数据的流向，其中in表示数据只能由客户端流向服务端，out表示只能由服务端流向客户端，而inout则表示               既可以由客户端流向服务端，也可以从服务端流向客户端。定向tag是针对在客户端中那个传入方法的对象而言的。in为定向tag的时候表现为服务端接收一个           那个对象的完整数据，但是客户端那个对象不会因为服务端对传参的修改而发生变动；out的话，表现为服务端将接收那个对象的空对象，但是服务端对接收           到的空对象有任何的修改客户端都会同步变动；inout为定向tag的情况下，服务端会接收到客户端传来对象的完整信息，并且客户端会同步服务端对这个对象           的任何变动。       <br />
+&emsp;&emsp;定向tag: AIDL中的定向tag用来表示在跨进程通信中数据的流向，其中in表示数据只能由客户端流向服务端，out表示只能由服务端流向客户端，而inout则表示既可以由客户端流向服务端，也可以从服务端流向客户端。定向tag是针对在客户端中那个传入方法的对象而言的。in为定向tag的时候表现为服务端接收一个           那个对象的完整数据，但是客户端那个对象不会因为服务端对传参的修改而发生变动；out的话，表现为服务端将接收那个对象的空对象，但是服务端对接收           到的空对象有任何的修改客户端都会同步变动；inout为定向tag的情况下，服务端会接收到客户端传来对象的完整信息，并且客户端会同步服务端对这个对象           的任何变动。       <br />
 &emsp;&emsp;Java中的String和CharSequence的定向tag默认且只能是in。
 ## AIDL创建    
 &emsp;&emsp;AIDL的创建需要涉及两种文件，一种是aidl使用类声明文件，另一种是aidl接口文件。<br />
